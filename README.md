@@ -1,15 +1,10 @@
-# Taller de Visión por Computador - cvtools
-
-Librería Python para procesamiento de imágenes y visión por computador.
-
-## Estructura del proyecto
 # Taller de Visión por Computador - Librería cvtools
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.8.0-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Librería Python para procesamiento de imágenes y visión por computador desarrollada como parte del taller del curso de Computer Vision.
+Librería Python para procesamiento de imágenes y visión por computador desarrollada por Alejandro Jiménez como parte del taller del curso de Computer Vision.
 
 ## 📋 Características
 
@@ -23,15 +18,21 @@ Librería Python para procesamiento de imágenes y visión por computador desarr
 - Python 3.8 o superior
 - pip (gestor de paquetes de Python)
 
-### Instalación de dependencias
+### Instalación desde GitHub
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tuusuario/computer-vision-taller.git
+git clone https://github.com/alejob774/computer-vision-taller.git
 cd computer-vision-taller
 
 # Instalar dependencias
 pip install -r requirements.txt
+```
+
+### Instalación directa con pip
+
+```bash
+pip install git+https://github.com/alejob774/computer-vision-taller.git
 ```
 
 ### Dependencias principales
@@ -58,7 +59,9 @@ computer-vision-taller/
 │   └── ejemplo2.png
 ├── main.py                 # Script de demostración
 ├── requirements.txt        # Dependencias del proyecto
-└── README.md              # Este archivo
+├── LICENSE                # Licencia MIT
+├── .gitignore            # Archivos ignorados por Git
+└── README.md             # Este archivo
 ```
 
 ## 🧩 Módulos y Funcionalidades
@@ -125,6 +128,7 @@ Aplica filtro Laplaciano para resaltar bordes y regiones de rápida variación d
 
 ```python
 # Importar la librería
+import cvtools
 from cvtools.camera import radial_distortion, change_focal_length
 from cvtools.color import rgb_to_hsv, plot_color_histogram, quantize_image
 from cvtools.filters import sobel_x, sobel_y, canny_edge_detector
@@ -188,9 +192,9 @@ Al ejecutar el script principal, se generarán:
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**  
+**Alejandro Borja**  
 Estudiante de Computer Vision  
-Universidad [Nombre de tu Universidad]  
+GitHub: [@alejob774](https://github.com/alejob774)  
 
 ## 📝 Licencia
 
@@ -198,15 +202,29 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, lee las [guías de contribución](CONTRIBUTING.md) antes de enviar un pull request.
+Las contribuciones son bienvenidas. Por favor:
+
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
 
 ## 📞 Contacto
 
 Para preguntas sobre este proyecto, puedes contactarme a través de:
-- Email: tu.email@universidad.edu
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tuperfil)
+- GitHub: [@alejob774](https://github.com/alejob774)
+- Email: alejandro.borja@urosario.edu
 
 ---
 
 **Fecha de entrega:** 29 de agosto de 2025  
-**Curso:** Computer Vision - Pregrado
+**Curso:** Computer Vision - Pregrado  
+
+## 🔗 Enlaces útiles
+
+- [Documentación de OpenCV](https://docs.opencv.org/)
+- [Documentación de NumPy](https://numpy.org/doc/)
+- [Documentación de Matplotlib](https://matplotlib.org/stable/contents.html)
+
+*Este proyecto fue desarrollado como parte del curso de Computer Vision y demuestra las capacidades de procesamiento de imágenes con Python y OpenCV.*
